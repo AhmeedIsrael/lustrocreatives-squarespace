@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Add a Sticky Header to Your Squarespace Website | Lustro Creatives</title>
+    <meta name="description"
+        content="A sticky header keeps your navigation visible as visitors scroll. Learn how to implement one on your Squarespace site with custom code and best practices." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lustrocreatives.com/blog-sticky-header" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How to Add a Sticky Header to Your Squarespace Website" />
+    <meta property="og:image" content="https://lustrocreatives.com/images/image-asset.jpeg" />
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Add a Sticky Header to Your Squarespace Website","datePublished":"2025-08-20","author":{"@type":"Organization","name":"Lustro Creatives"}}</script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container nav-inner"><a href="index.html" class="nav-logo" aria-label="Lustro Creatives Home">Lustro
+                Creatives<span class="nav-logo-dot" aria-hidden="true"></span></a>
+            <ul class="nav-links" role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Start Project</a></li>
+            </ul>
+            <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start Project</a></div><button
+                class="hamburger" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-nav" role="dialog" aria-label="Mobile navigation"><button class="mobile-nav-close"
+            aria-label="Close navigation menu">✕</button><a href="index.html">Home</a><a href="about.html">About</a><a
+            href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="blog.html">Blog</a><a
+            href="contact.html">Start Project</a><a href="contact.html" class="btn btn-primary">Start Project</a></div>
+    <main>
+        <section class="blog-post-hero">
+            <div class="container"><a href="blog.html" class="label" style="text-decoration:none;">← Back to Blog</a>
+                <h1>How to Add a Sticky Header to Your Squarespace Website</h1>
+                <div class="blog-post-meta"><span>Web Design</span><span class="divider"></span><span>August
+                        2025</span><span class="divider"></span><span>5 min read</span></div>
+            </div>
+        </section>
+        <section class="section" style="padding-top:0;">
+            <div class="container">
+                <div class="blog-post-featured-img"><img src="images/image-asset.jpeg"
+                        alt="Sticky header implementation" loading="lazy" /></div>
+                <div class="blog-post-body">
+                    <p>A sticky header (also called a fixed header) stays visible at the top of the screen as users
+                        scroll down your page. It's one of the most impactful UX improvements you can make, keeping
+                        navigation accessible at all times and reducing the effort visitors need to explore your site.
+                    </p>
+
+                    <h2>Why Use a Sticky Header?</h2>
+                    <p>The data speaks for itself: websites with sticky headers see higher engagement metrics because
+                        visitors can always access navigation without scrolling back to the top. Key benefits include:
+                    </p>
+                    <ul>
+                        <li><strong>Better navigation accessibility</strong> — users can navigate from anywhere on the
+                            page</li>
+                        <li><strong>Increased conversions</strong> — your CTA button is always visible</li>
+                        <li><strong>Improved user experience</strong> — reduces scroll fatigue on long pages</li>
+                        <li><strong>Brand presence</strong> — your logo remains visible throughout the browsing session
+                        </li>
+                    </ul>
+
+                    <h2>Implementing a Sticky Header in Squarespace</h2>
+                    <p>While Squarespace 7.1 has built-in options for sticky navigation in some templates, you may want
+                        more control over the behaviour. Here's a custom approach:</p>
+
+                    <h3>Method 1: Built-In Settings</h3>
+                    <ol>
+                        <li><strong>Open your site editor</strong> and navigate to Design → Site Styles</li>
+                        <li><strong>Look for the Header section</strong> in the style panel</li>
+                        <li><strong>Enable "Fixed Header"</strong> or "Sticky Position" depending on your template</li>
+                        <li><strong>Adjust padding and transparency</strong> for the scrolled state</li>
+                    </ol>
+
+                    <h3>Method 2: Custom CSS</h3>
+                    <p>For more control over the sticky behaviour, you can add custom CSS through the Code Injection
+                        panel:</p>
+
+                    <div class="tip-box">
+                        <strong>💡 Pro Tip</strong>
+                        <p>Add a background blur and subtle shadow to your sticky header when scrolled. This creates a
+                            polished, modern effect that separates the nav from the page content without a harsh border.
+                        </p>
+                    </div>
+
+                    <h2>Design Considerations</h2>
+                    <h3>Size Matters</h3>
+                    <p>A sticky header should be compact. On scroll, reduce the header height by 20-30% to maximise
+                        content space. Keep the header under 70px tall when scrolled.</p>
+
+                    <h3>Background Treatment</h3>
+                    <p>A semi-transparent background with a backdrop blur effect is the modern standard. It allows
+                        content to show through slightly while keeping the header readable.</p>
+
+                    <h3>Performance</h3>
+                    <p>Heavy sticky headers with complex animations can cause jank (visual stuttering) during scroll.
+                        Keep animations simple and use CSS transforms instead of positioning properties for smooth
+                        performance.</p>
+
+                    <blockquote>
+                        <p>The best sticky header is one you barely notice. It should be there when you need it, but
+                            never get in the way of your content.</p>
+                    </blockquote>
+
+                    <h2>Common Mistakes</h2>
+                    <ul>
+                        <li><strong>Too tall on mobile</strong> — a sticky header that takes up 25% of the mobile screen
+                            is counterproductive</li>
+                        <li><strong>Missing z-index</strong> — ensure your header sits above all other page elements
+                        </li>
+                        <li><strong>No scroll transition</strong> — abrupt changes are jarring; animate the state change
+                        </li>
+                        <li><strong>Forgetting body padding</strong> — add top padding to prevent content from hiding
+                            under the fixed header</li>
+                    </ul>
+
+                    <p>Need a website with polished navigation and attention to UX details? <a href="contact.html"
+                            style="color:var(--teal);text-decoration:underline;">Start a project with us</a>.</p>
+
+                    <div class="blog-post-nav"><a href="blog-404-page.html" class="btn btn-outline">← Previous
+                            Post</a><a href="blog-squarespace-autonomy.html" class="btn btn-primary">Next Post →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="related-posts bg-card">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Related Posts</h2>
+                </div>
+                <div class="grid-3"><a href="blog-squarespace-navigation.html" class="blog-card reveal reveal-delay-1">
+                        <div class="blog-card-img"><img src="images/Blog+Post+Thumbnails+%285%29_1.png" alt="Navigation"
+                                loading="lazy" /></div>
+                        <div class="blog-card-body"><span class="blog-card-cat">Squarespace Tips</span>
+                            <h3>Creating a Sleek Navigation with Dropdowns</h3>
+                            <p class="blog-card-date">January 2026</p>
+                        </div>
+                    </a><a href="blog-choose-web-designer.html" class="blog-card reveal reveal-delay-2">
+                        <div class="blog-card-img"><img src="images/FibreLab+Thumbnail_1.png" alt="Web Designer"
+                                loading="lazy" /></div>
+                        <div class="blog-card-body"><span class="blog-card-cat">Web Design</span>
+                            <h3>How to Choose a Web Designer: 5 Questions to Ask</h3>
+                            <p class="blog-card-date">February 2026</p>
+                        </div>
+                    </a><a href="blog-404-page.html" class="blog-card reveal reveal-delay-3">
+                        <div class="blog-card-img"><img src="images/Canva+Mockup.png" alt="404 Page" loading="lazy" />
+                        </div>
+                        <div class="blog-card-body"><span class="blog-card-cat">Squarespace Tips</span>
+                            <h3>Professional 404 Page for Squarespace</h3>
+                            <p class="blog-card-date">September 2025</p>
+                        </div>
+                    </a></div>
+            </div>
+        </section>
+        <section class="section-sm">
+            <div class="container">
+                <div class="cta-lime reveal">
+                    <h2>Need a custom Squarespace site?</h2>
+                    <p>Let's talk about your project. No pressure, just honest conversation.</p>
+                    <div class="cta-actions"><a href="contact.html" class="btn btn-primary btn-lg">Start the
+                            Conversation</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand"><a href="index.html" class="nav-logo">Lustro Creatives<span
+                            class="nav-logo-dot" aria-hidden="true"></span></a>
+                    <p>Expert Squarespace website design and development for established businesses.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul role="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Start Project</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul role="list">
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#brand-strategy">Brand Strategy</a></li>
+                        <li><a href="services.html#systems">Scaling Systems</a></li>
+                        <li><a href="services.html#consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul role="list">
+                        <li><a href="mailto:hello@lustrocreatives.com">hello@lustrocreatives.com</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Lustro Creatives. All rights reserved.</p>
+                <div class="footer-social"><a href="https://twitter.com/lustrocreatives" aria-label="Twitter"
+                        target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg></a><a href="https://linkedin.com/company/lustrocreatives" aria-label="LinkedIn"
+                        target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg></a><a href="https://instagram.com/lustrocreatives" aria-label="Instagram" target="_blank"
+                        rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                        </svg></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
